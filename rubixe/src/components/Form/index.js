@@ -10,7 +10,7 @@ function Form() {
   const [initialData, setinitialData] = useState(undefined);
 
   const fetchAllMails = async () => {
-    const response = await fetch("https://rubixe.up.railway.app/messageus");
+    const response = await fetch("https://rubixebackend-production.up.railway.app/messageus");
     if (response) {
       setinitialData(await response.json());
     }
@@ -86,7 +86,7 @@ function Form() {
     const id = uuid4();
     console.log(setnameErrorClass, setemailErrorClass, setnumberErrorClass);
     if (!nameErrorClass && !emailErrorClass && !numberErrorClass) {
-      fetch("https://rubixe.up.railway.app/messageus", {
+      fetch("https://rubixebackend-production.up.railway.app/messageus", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
