@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const sqlite3 = require("sqlite3").verbose();
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -40,6 +40,7 @@ app.post("/messageus", (req, res) => {
   });
 });
 
+// Get all contacts from the database
 app.get("/messageus", (req, res) => {
   const sql = `SELECT email FROM contacts`;
 
