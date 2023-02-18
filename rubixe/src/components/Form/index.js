@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { uuid4 } from "uuid4";
 import "./index.css";
 
@@ -7,25 +7,6 @@ function Form() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-  const [initialData, setinitialData] = useState(undefined);
-
-  const fetchAllMails = async () => {
-    const response = await fetch("https://rubixebackend-production.up.railway.app/messageus");
-    if (response) {
-      setinitialData(await response.json());
-    }
-  };
-
-  useEffect(() => {
-    console.log("Hello");
-    fetchAllMails();
-  }, []);
-  if (initialData) {
-    const index = initialData.indexOf("");
-    if (index > -1) {
-      initialData.splice(index, 1);
-    }
-  }
 
   const [nameErrorClass, setnameErrorClass] = useState(false);
   const setnameError = (a) => {
@@ -100,7 +81,7 @@ function Form() {
         .catch((error) => {
           console.error(error);
         });
-      initialData.push(email);
+
       setName("");
       setEmail("");
       setPhone("");
