@@ -1,0 +1,13 @@
+.footer {
+  background-color: black;
+  font-size: 17px;
+  font-weight: 500;
+  height: 5vh;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-para {
+  color: rgb(150, 143, 143);
+}

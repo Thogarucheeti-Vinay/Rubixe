@@ -1,0 +1,292 @@
+.first-container {
+  height: 90vh;
+  margin-top: 75px;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/*
+https://marvel-b1-cdn.bc0a.com/f00000000026007/resilienteducator.com/wp-content/uploads/2018/10/increase-college-student-engagement.jpg
+https://s35691.pcdn.co/wp-content/uploads/2017/01/iStock-623345352.FF170123.jpg
+*/
+.first {
+  background-image: url("https://marvel-b1-cdn.bc0a.com/f00000000026007/resilienteducator.com/wp-content/uploads/2018/10/increase-college-student-engagement.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+.first-heading {
+  font-weight: bold;
+  font-size: 50px;
+}
+.heading-container {
+  width: 500px;
+  margin-left: 15%;
+  margin-bottom: 7%;
+}
+.first-para {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.big-span {
+  font-size: 55px;
+}
+.small-span {
+  font-size: 20px;
+}
+.second-para {
+  color: black;
+  letter-spacing: 1px;
+  font-family: justify;
+  line-height: 1.3;
+  font-size: 17px;
+}
+.second-image {
+  width: 300px;
+  height: 200px;
+}
+.second {
+  padding: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.third {
+  background-color: rgba(201, 54, 157, 0.822);
+  padding: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.third-para {
+  color: white;
+  letter-spacing: 1px;
+  font-family: justify;
+  line-height: 1.3;
+  font-size: 17px;
+}
+.second-image {
+  order: 1;
+}
+.fourth {
+  background-color: rgb(228, 225, 225);
+  color: black;
+  padding: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.third-heading {
+  color: white;
+}
+.card {
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.header {
+  height: 30px;
+  background-color: rgb(35, 33, 114);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.numberbox {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(223, 213, 213);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-15px);
+}
+
+.numberbox p {
+  color: rgb(35, 33, 114);
+  font-weight: bold;
+  font-size: 18px;
+}
+.card1 {
+  border-radius: 0px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.card2 {
+  justify-content: flex-end;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.card2 .header {
+  background-color: rgb(156, 19, 145);
+  border-radius: 0px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.card2 .numberbox {
+  transform: translateY(5px);
+}
+.card2 .numberbox p {
+  color: rgb(156, 19, 145);
+}
+.card4 {
+  justify-content: flex-end;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.card4 .header {
+  background-color: rgb(1, 119, 50);
+  border-radius: 0px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.card4 .numberbox {
+  transform: translateY(5px);
+}
+.card4 .numberbox p {
+  color: rgb(1, 119, 50);
+}
+.card3 .header {
+  background-color: rgb(255, 167, 53);
+}
+.card3 .numberbox {
+  transform: translateY(-15px);
+}
+.card3 .numberbox p {
+  color: rgb(255, 167, 53);
+}
+.card5 .header {
+  background-color: rgb(185, 131, 49);
+}
+.card5 .numberbox {
+  transform: translateY(-15px);
+}
+.card5 .numberbox p {
+  color: rgb(185, 131, 49);
+}
+.card5 {
+  border-radius: 0px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.card3 {
+  border-radius: 0px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.icon {
+  margin-top: 10%;
+  width: 40%;
+  height: 80%;
+  margin-bottom: 10%;
+}
+.card1,
+.card3,
+.card5 {
+  background-image: linear-gradient(to bottom, white, rgb(228, 225, 225));
+}
+.card2,
+.card4 {
+  background-image: linear-gradient(to top, white, rgb(228, 225, 225));
+}
+.second-content-sm {
+  display: none;
+}
+.second-content {
+  display: flex;
+  flex-direction: column;
+}
+.second-content-lg {
+  display: flex;
+  justify-content: space-between;
+}
+.image-container {
+  display: flex;
+  align-items: center;
+}
+.card-body {
+  padding: 10%;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.card {
+  margin-right: 2px;
+  box-shadow: -10px 0px -10px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 748px) {
+  .first-container {
+    height: 90vh;
+    margin-top: 82px;
+  }
+  .second {
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card2,
+  .card4 {
+    margin-bottom: 15%;
+  }
+  .second-content-sm {
+    display: block;
+  }
+  .second-content-lg {
+    display: none;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .third {
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .fourth {
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

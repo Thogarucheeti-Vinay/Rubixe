@@ -1,0 +1,245 @@
+.navbar {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar-logo {
+  width: 100px;
+  height: 40px;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar-link {
+  margin-left: 1.5rem;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.navbar-toggle:hover {
+  background-color: rgb(236, 236, 236);
+  width: 50px;
+}
+.navbar-toggle:hover .navbar-toggle-icon {
+  margin-left: 5px;
+  background-color: black;
+}
+.navbar-toggle:hover .navbar-toggle-icon::before {
+  background-color: black;
+}
+.navbar-toggle:hover .navbar-toggle-icon::after {
+  background-color: black;
+}
+.navbar-toggle-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggle-icon::before,
+.navbar-toggle-icon::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-toggle-icon::before {
+  top: -8px;
+}
+.navbar-toggle-icon::after {
+  top: 8px;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;
+  font-weight: 300;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  font-size: 15px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content .navbar-link {
+  margin-left: 0px;
+}
+.dropdown {
+  margin-left: 20px;
+}
+.ai-internship {
+  padding: 0px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+  }
+  .dropdown-content {
+    position: absolute;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 1);
+    min-width: 160px;
+    height: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 30%;
+    top: 25%;
+    left: 30%;
+    bottom: 35%;
+  }
+  .navbar-toggle {
+    display: block;
+    margin: 0px;
+    margin-right: 10px;
+    padding-left: 0px;
+    height: 50px;
+  }
+  .navbar-toggle:hover {
+    margin-right: 0px;
+  }
+
+  .dropdown-content .navbar-link:hover {
+    background-color: rgb(75, 75, 75);
+  }
+  .dropdown {
+    margin-left: 0px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 10%;
+    height: calc(100vh - 4rem);
+    position: absolute;
+    font-size: 15px;
+    top: 5rem;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 99;
+  }
+
+  .navbar-link {
+    color: white;
+    margin: 1rem 0;
+  }
+
+  .navbar-toggle-icon {
+    transform: rotate(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-toggle-icon::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    top: -8px;
+  }
+
+  .navbar-toggle-icon::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    top: 8px;
+  }
+
+  .navbar-toggle-icon.open {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle-icon.open::before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .navbar-toggle-icon.open::after {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

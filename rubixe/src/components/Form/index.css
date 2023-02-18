@@ -1,0 +1,147 @@
+.newsletter-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  font-size: 1.01rem;
+  line-height: 1.5;
+  letter-spacing: 0.5;
+}
+.newsletter {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(163, 162, 162);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.text-area {
+  width: 100%;
+}
+.newsletter-div {
+  padding: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 425px) {
+  .newsletter-form {
+    width: 100%;
+    border-left: none !important;
+    padding-left: 0px !important;
+  }
+  .newsletter-div {
+    width: 100% !important;
+  }
+  .newsletter-content {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 1rem !important;
+  }
+  .newsletter-form {
+    width: 100%;
+  }
+  .newsletter-div {
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .newsletter-form {
+    width: 50%;
+    /* border-top: 2px solid black; */
+    border-left: none !important;
+    padding-left: 0px !important;
+  }
+  .newsletter-div {
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .newsletter-content {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .newsletter-content {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    text-align: center;
+    padding-right: 20px;
+    font-size: 1.3rem;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-form {
+  width: 50%;
+  border-left: 2px solid rgb(163, 162, 162);
+  padding-left: 40px;
+}
+
+label {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #1ec8f3;
+  font-weight: 700;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.active {
+  display: block;
+  margin: 0px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: red;
+}
+
+.inactive {
+  display: none;
+}
